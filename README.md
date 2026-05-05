@@ -34,9 +34,9 @@
 
 **2.1. С помощью официальной документации приведите пример команды резервирования данных и восстановления БД (pgdump/pgrestore-утилита PostgreSQL).**
 
-*Решение:
+*Решение:*
 
-Резервное копирование (pg_dump) 
+*Резервное копирование (pg_dump) 
 Полный дамп одной базы:*
 ```bash
 pg_dump -U username -d dbname -F c -f /backup/dbname_backup.dump
@@ -46,7 +46,7 @@ pg_dump -U username -d dbname -F c -f /backup/dbname_backup.dump
 - `-F c` — формат `custom` (сжатый, поддерживает pg_restore).  
 - `-f /backup/dbname_backup.dump` — путь к файлу бэкапа.  
 
-Дамп всего кластера (всех БД):
+*Дамп всего кластера (всех БД):*
 ```bash
 pg_dumpall -U postgres -f /backup/full_backup.sql
 ```
