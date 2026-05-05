@@ -131,7 +131,6 @@ xtrabackup --backup --target-dir=/backupdb/inc1 --incremental-basedir=/backupdb/
 
 *Реплика может использоваться для проверок, в том числе автоматизированных проверок работы резервного копирования.*
 
----
 
 
 
