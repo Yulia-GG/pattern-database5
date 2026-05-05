@@ -36,8 +36,8 @@
 
 *Решение:*
 
-*Резервное копирование (pg_dump) 
-Полный дамп одной базы:*
+*Резервное копирование (pg_dump)*
+*Полный дамп одной базы:*
 ```bash
 pg_dump -U username -d dbname -F c -f /backup/dbname_backup.dump
 ```
@@ -52,8 +52,8 @@ pg_dumpall -U postgres -f /backup/full_backup.sql
 ```
 - `pg_dumpall` создаёт SQL-скрипт для восстановления всех БД, ролей и прав.  
 
-*Восстановление (pg_restore) 
-Восстановление в новую БД:*
+*Восстановление (pg_restore)* 
+*Восстановление в новую БД:*
 ```bash
 pg_restore -U username -d new_dbname -C /backup/dbname_backup.dump
 ```
