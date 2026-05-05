@@ -52,26 +52,23 @@ pg_dumpall -U postgres -f /backup/full_backup.sql
 ```
 - `pg_dumpall` создаёт SQL-скрипт для восстановления всех БД, ролей и прав.  
 
----
-
-Восстановление (pg_restore) 
-Восстановление в новую БД: 
+*Восстановление (pg_restore) 
+Восстановление в новую БД:*
 ```bash
 pg_restore -U username -d new_dbname -C /backup/dbname_backup.dump
 ```
 - `-C` — создаёт БД перед восстановлением.  
 
-Восстановление с заменой существующей БД: 
+*Восстановление с заменой существующей БД:*
 ```bash
 dropdb -U username dbname && createdb -U username dbname  
 pg_restore -U username -d dbname /backup/dbname_backup.dump
 ```
 
-Восстановление из pg_dumpall:
+*Восстановление из pg_dumpall:*
 ```bash
 psql -U postgres -f /backup/full_backup.sql
 ```
-
 
 **2.1. Возможно ли автоматизировать этот процесс? Если да, то как?**
 
