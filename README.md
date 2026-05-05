@@ -72,7 +72,7 @@ pg_restore -U username -d dbname /backup/dbname_backup.dump
 psql -U postgres -f /backup/full_backup.sql
 ```
 
-**2.1. Возможно ли автоматизировать этот процесс? Если да, то как?**
+**2.2. Возможно ли автоматизировать этот процесс? Если да, то как?**
 
 *Решение:*
 
